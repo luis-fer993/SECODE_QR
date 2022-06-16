@@ -73,7 +73,7 @@ elseif (!empty($_POST['user-email']) && !empty($_POST['user-password']) && !empt
         $params->bindParam(':ideps', $id_eps);
         $num_ramd = rand(1, 1000);
         $params->bindParam(':ndoc', $num_ramd);
-        //estabklecemos los parametros de la consulta
+        //establecemos los parametros de la consulta
 
         if ($params->execute()) {
           echo ' <div class="alert" style="background:#2eb885;">
